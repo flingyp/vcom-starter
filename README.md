@@ -1,7 +1,19 @@
-# vcom-starter
+# VCom Starter
 
-在开发前都需要对这些进行全局替换
+Starter template of development vue component
 
-TODO: @vcom/core 组件的子包，它最后打包的 dist 文件会放在根目录，最后上传到 NPM 的就是这个组件的子包但是报名还是使用 `@vcom/starter` 的包名
-TODO: @vcom/starter 组件包名
-TODO: vcom-starter 打包生成的文件
+## Template Usage
+
+Clone the repository and install dependence packages.
+
+Run command of `pnpm run dev` and develop component at core folder.
+
+Run command of `pnpm run build` and builded component can generate `dist` folder into root path
+
+## Tips
+
+Some characters of the project need to be replaced globally before development
+
+**@vcom/starter**: It is package name of component
+
+**vcom-starter**: It is bundle name of file after building

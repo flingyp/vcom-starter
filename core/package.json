@@ -1,5 +1,5 @@
 {
-  "name": "@vcom/core",
+  "name": "core",
   "version": "1.0.0",
   "description": "Vue Component Starter Core",
   "main": "index.js",

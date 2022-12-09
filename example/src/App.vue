@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-  import { YButton } from '@vcom/core'
+  import { YButton } from 'core'
 </script>
 
 <style scoped>
