@@ -13,7 +13,7 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true
   },
-  "include": ["core/**/*.ts", "core/**/*.d.ts", "core/**/*.vue", "vite-env.d.ts"],
+  "include": ["core/**/*", "example/**/*" , "vite-env.d.ts"],
   "exclude": ["**/node_modules", "**/*.json", "**/dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
