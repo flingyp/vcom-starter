@@ -1,0 +1,55 @@
+$defaultBlock: 'y-button';
+
+$ButtonPadding: 0 14px;
+$ButtonHeight: 34px;
+$ButtonRadius: 4px;
+$ButtonPrimary: #18a058;
+$ButtonSuccess: #18a058;
+$ButtonWarning: #f0a020;
+$ButtonInfo: #2080f0;
+$ButtonDanger: #d03050;
+
+.#{$defaultBlock} {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  height: $ButtonHeight;
+  padding: $ButtonPadding;
+  border-radius: $ButtonRadius;
+
+  &--default-type {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid rgb(224, 224, 230);
+  }
+
+  &--primary-type {
+    background-color: $ButtonPrimary;
+    border: 1px solid $ButtonPrimary;
+  }
+
+  &--success-type {
+    background-color: $ButtonSuccess;
+    border: 1px solid $ButtonSuccess;
+  }
+
+  &--warning-type {
+    background-color: $ButtonWarning;
+    border: 1px solid $ButtonWarning;
+  }
+
+  &--info-type {
+    background-color: $ButtonInfo;
+    border: 1px solid $ButtonInfo;
+  }
+
+  &--danger-type {
+    background-color: $ButtonDanger;
+    border: 1px solid $ButtonDanger;
+  }
+}

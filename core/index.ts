@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import YButton from './YButton.vue'
+import YButton from './button/YButton.vue'
 
 export { YButton }
 export default {

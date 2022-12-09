@@ -9,7 +9,8 @@ export default defineConfig({
   build: {
     outDir: '../dist',
     emptyOutDir: true,
-    cssCodeSplit: true,
+    cssCodeSplit: false,
+    sourcemap: true,
     lib: {
       entry: resolve(__dirname, './index.ts'),
       name: 'vcom-starter',
