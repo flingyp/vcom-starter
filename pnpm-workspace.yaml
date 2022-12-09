@@ -1,0 +1,3 @@
+packages:
+  - "@vcom-starter/core"
+  - "@vcom-starter/example"
