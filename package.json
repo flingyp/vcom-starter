@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "prettier \"{core,example}/**/*\" --write  && eslint \"{core,example}/**/*\" --fix",
+    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -n ./changelog.options.js && git add CHANGELOG.md",
     "prepare": "husky install",
     "commit": "git-cz"
   },
@@ -21,6 +22,10 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.46.0",
     "commitizen": "^4.2.6",
+    "compare-func": "^2.0.0",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-cli": "^2.2.2",
+    "conventional-changelog-custom-config": "^0.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
