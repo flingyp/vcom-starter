@@ -1,14 +1,24 @@
 {
-  "name": "vcom-starter",
+  "name": "@vcom/starter",
   "version": "1.0.0",
   "description": "Vue Component Starter",
-  "main": "index.js",
+  "main": "./dist/vcom-starter.umd.js",
+  "module": "./dist/vcom-starter.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
+    "dev": "pnpm run --filter=example dev",
+    "component:build": "pnpm run --filter=@vcom/core build",
     "lint": "prettier \"{core,example}/**/*.{js,jsx,ts,tsx,vue}\" --write  && eslint \"{core,example}/**/*.{js,jsx,ts,tsx,vue}\" --fix",
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -n ./changelog.options.js && git add CHANGELOG.md",
     "prepare": "husky install",
     "commit": "git-cz"
   },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "Vue3",
     "Component",

@@ -1,5 +1,7 @@
 <template>
-  <div>Hello World</div>
+  <div>
+    <YButton />
+  </div>
 </template>
 
 <script setup lang="ts"></script>
