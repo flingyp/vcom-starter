@@ -1,6 +1,7 @@
-# VCom Starter
-
-Starter template of development vue component
+<div align="center">
+    <h2>VCom Starter</h2>
+    <h5>Starter template of development vue component</h5>
+</div>
 
 ## Template Usage
 
