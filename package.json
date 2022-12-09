@@ -4,7 +4,8 @@
   "description": "Vue Component Starter",
   "main": "index.js",
   "scripts": {
-    "lint": "prettier \"{core,example}/**/*\" --write  && eslint \"{core,example}/**/*\" --fix"
+    "lint": "prettier \"{core,example}/**/*\" --write  && eslint \"{core,example}/**/*\" --fix",
+    "prepare": "husky install"
   },
   "keywords": [
     "Vue3",
@@ -24,7 +25,14 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.8.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
     "typescript": "*"
+  },
+  "lint-staged": {
+    "{core,example}/**/*": [
+      "pnpm run lint"
+    ]
   }
 }
