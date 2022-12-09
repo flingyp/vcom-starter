@@ -3,14 +3,26 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:vue/vue3-essential', 'standard-with-typescript', 'plugin:prettier/recommended'],
+  extends: ['plugin:vue/vue3-essential', 'airbnb-base', 'plugin:prettier/recommended'],
+  parser: 'vue-eslint-parser',
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    parser: '@typescript-eslint/parser',
-    project: ['./tsconfig.json', './tsconfig.node.json']
+    parser: '@typescript-eslint/parser'
   },
-  plugins: ['vue'],
-  rules: {}
+  plugins: ['vue', '@typescript-eslint'],
+  rules: {
+    'import/prefer-default-export': 'off',
+    'vue/no-multiple-template-root': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true, // 对开发依赖设置为true，不报错
+        optionalDependencies: false,
+        peerDependencies: false,
+        bundledDependencies: false
+      }
+    ]
+  }
 }
