@@ -1,6 +1,6 @@
 <div align="center">
     <h1>VCom Starter</h1>
-    <h3>Starter template of development vue component</h3>
+    <h3>Starter template of Development Vue Component</h3>
 </div>
 
 ## Template Usage
