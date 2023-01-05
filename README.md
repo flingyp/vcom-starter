@@ -11,6 +11,8 @@ Run command of `pnpm run dev` and develop component at core folder.
 
 Run command of `pnpm run build` and builded component can generate `dist` folder into root path
 
+Tip: The use of global components supports global type promotion
+
 ## Tips
 
 Some characters of the project need to be replaced globally before development
