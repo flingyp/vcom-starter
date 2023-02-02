@@ -11,7 +11,7 @@ const indexDeclarePath = resolve('./dist/index.d.ts')
 
 const declareFileContent = readFileSync(indexDeclarePath, { encoding: 'utf-8' })
 
-const componentName = declareFileContent.match(/import\s(.*)\sfrom\s'.*\.vue'/)![1]
+const componentName = declareFileContent.match(/import\s(.*)\sfrom\s'.*\.vue'/)?.[1] || ''
 
 const appendContent = `declare module "vue" {
     export interface GlobalComponents {

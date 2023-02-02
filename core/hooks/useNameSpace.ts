@@ -1,5 +1,4 @@
-/* eslint-disable no-param-reassign */
-export function useNameSpace(defaultBlock: string = '') {
+export function useNameSpace(defaultBlock = '') {
   const globalBlock = defaultBlock
 
   const b = (block?: string) => block || globalBlock
@@ -22,6 +21,6 @@ export function useNameSpace(defaultBlock: string = '') {
     be,
     bem,
     bm,
-    em
+    em,
   }
 }

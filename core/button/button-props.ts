@@ -5,8 +5,8 @@ export type buttonTypes = 'default' | 'primary' | 'success' | 'warning' | 'info'
 export const buttonProps = {
   type: {
     type: String as PropType<buttonTypes>,
-    default: 'default'
-  }
+    default: 'default',
+  },
 } as const
 
 export type ButtonProps = ExtractPropTypes<typeof buttonProps>

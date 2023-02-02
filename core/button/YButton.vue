@@ -1,23 +1,23 @@
 <template>
   <button :class="classes">
-    <slot></slot>
+    <slot />
   </button>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue'
-  import useButton from './use-button'
-  import { buttonProps, ButtonProps } from './button-props'
+import { defineComponent } from 'vue'
+import useButton from './use-button'
+import { buttonProps, ButtonProps } from './button-props'
 
-  export default defineComponent({
-    name: 'YButton',
-    props: buttonProps,
-    setup(props: ButtonProps) {
-      const { classes } = useButton(props)
+export default defineComponent({
+  name: 'YButton',
+  props: buttonProps,
+  setup(props: ButtonProps) {
+    const { classes } = useButton(props)
 
-      return { classes }
-    }
-  })
+    return { classes }
+  },
+})
 </script>
 
 <style lang="scss" scoped>

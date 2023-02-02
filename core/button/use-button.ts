@@ -12,10 +12,10 @@ export default (props: ButtonProps) => {
     [ns.bm('success-type')]: props.type === 'success',
     [ns.bm('warning-type')]: props.type === 'warning',
     [ns.bm('info-type')]: props.type === 'info',
-    [ns.bm('danger-type')]: props.type === 'danger'
+    [ns.bm('danger-type')]: props.type === 'danger',
   }
 
   return {
-    classes
+    classes,
   }
 }

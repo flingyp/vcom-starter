@@ -13,6 +13,6 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true
   },
-  "include": ["core/**/*", "example/**/*", "vite-env.d.ts"],
+  "include": ["core/**/*", "example/**/*", "vite-env.d.ts", "scripts/**/*"],
   "exclude": ["**/node_modules", "**/*.json", "**/dist"]
 }

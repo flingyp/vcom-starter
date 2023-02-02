@@ -12,16 +12,16 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, './index.ts'),
       name: 'vcom-starter',
-      fileName: 'vcom-starter'
+      fileName: 'vcom-starter',
     },
     rollupOptions: {
       external: ['vue'],
       output: {
         globals: {
-          vue: 'Vue'
-        }
-      }
-    }
+          vue: 'Vue',
+        },
+      },
+    },
   },
-  plugins: [vue(), dts()]
+  plugins: [vue(), dts()],
 })
