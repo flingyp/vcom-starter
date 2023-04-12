@@ -1,7 +1,8 @@
 /**
- * gen-type.ts 文件用于生成组件类型提示代码
+ * gen-type.ts 文件用于生成全局组件类型提示代码
  * 作用：在TS项目中引入全局组件是没有类型提升的，很不友好。
  * 本功能只在 VsCode + Volar + TS 项目中适用
+ * 参考文章：https://juejin.cn/post/7066730414626308103
  */
 
 import { resolve } from 'path'
